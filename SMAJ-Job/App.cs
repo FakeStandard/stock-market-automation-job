@@ -1,11 +1,6 @@
 ﻿using SMAJ_DAL.IRepository;
 using SMAJ_Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace SMAJ_Job
 {
@@ -57,11 +52,15 @@ namespace SMAJ_Job
                                     LastBestAskVolume = item[14],
                                     PER = item[15]
                                 });
+
+                            Console.WriteLine($"Add {item[0]} {item[1]}");
                         });
 
                         _repository.Save();
+                        Console.WriteLine($"【{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")} 寫入 {date.ToShortDateString()} 資料成功.】");
 
                         // write log
+
                     }
                     catch (Exception ex)
                     {
