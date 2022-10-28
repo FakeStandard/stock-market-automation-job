@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAJ-Job", "SMAJ-Job\SMAJ-Job.csproj", "{9B6B1586-B6BC-4C6C-8E05-CBA9B63AA373}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAJ.Job", "SMAJ-Job\SMAJ.Job.csproj", "{9B6B1586-B6BC-4C6C-8E05-CBA9B63AA373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAJ-DAL", "SMAJ-DAL\SMAJ-DAL.csproj", "{A80A3AC8-427F-4FE3-89DD-2F3C95F438DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAJ.DAL", "SMAJ-DAL\SMAJ.DAL.csproj", "{A80A3AC8-427F-4FE3-89DD-2F3C95F438DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAJ-Model", "SMAJ-Model\SMAJ-Model.csproj", "{135D94C7-BF95-4868-8D91-663EB3B6F242}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAJ.Model", "SMAJ-Model\SMAJ.Model.csproj", "{135D94C7-BF95-4868-8D91-663EB3B6F242}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
