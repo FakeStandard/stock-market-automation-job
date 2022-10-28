@@ -21,7 +21,5 @@ services.AddTransient<IGenericRepository<DailyQuotes>, GenericRepository<DailyQu
 var provider = services.BuildServiceProvider();
 
 // 執行主服務
-provider.GetRequiredService<App>().Run();
-
-// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
+await provider.GetRequiredService<App>().CrawlerStockByDate(DateTime.Now);
+//provider.GetRequiredService<App>().Run(); // 沒有 await

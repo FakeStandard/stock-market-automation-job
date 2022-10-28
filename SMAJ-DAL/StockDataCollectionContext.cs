@@ -23,5 +23,13 @@ namespace SMAJ_DAL
             optionsBuilder.UseSqlServer(
                 @"Data Source=(Localdb)\MSSQLLocalDB;Initial Catalog=StockDataCollection;Integrated Security=True");
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<DailyQuotes>().ToTable("DailyQuotes");
+            //modelBuilder.Entity<OrderDetail>()
+            //    .ToTable("OrderDetails")
+            //    .HasKey(k => new { k.OrderID, k.ProductID });
+        }
     }
 }

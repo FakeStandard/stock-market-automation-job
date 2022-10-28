@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SMAJ_Model
 {
+    [Table("DailyQuotes")]
     public class DailyQuotes
     {
         /// <summary>
